@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en" class="fixed">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>地图设置</title>
+		<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
+		<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+		<link rel="stylesheet" href="stylesheets/css/style.css">
+		<link rel="stylesheet" href="stylesheets/css/index_css.css" />
+		<script type="text/javascript" src="javascripts/jquery-2.1.0.js" ></script>
+
+	</head>
+
+	<body style="background: white;">
+		<div class="panel-content" style="margin-top: 30px;">
+			<div class="row">
+				<div class="col-md-12">
+					<form id="inline-validation" class="form-horizontal form-stripe" novalidate="novalidate">
+						<div class="form-group">
+							<label for="name" class="col-sm-3 control-label">地图宽度</label>
+							<div class="col-sm-3">
+								<input type="text" id="input_type_url" class="form-control">
+
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="username" class="col-sm-3 control-label">地图高度</label>
+							<div class="col-sm-3">
+								<input type="text" class="form-control" id="username" name="username" required="" aria-required="true">
+							</div>
+
+						</div>
+						<div class="form-group">
+							<label for="email" class="col-sm-3 control-label">地图经度</label>
+							<div class="col-sm-3">
+								<input type="text" class="form-control" name="email" required="" aria-required="true">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="url" class="col-sm-3 control-label">地图纬度</label>
+							<div class="col-sm-3">
+								<input type="text" class="form-control" style="padding: 4px 0 0 5px;" name="url">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="email" class="col-sm-3 control-label">显示级别</label>
+							<div class="col-sm-3">
+								<input type="text" class="form-control" name="email" required="" aria-required="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="email" class="col-sm-3 control-label">信息窗标题</label>
+							<div class="col-sm-3">
+								<input type="text" class="form-control" name="email" required="" aria-required="true">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="url" class="col-sm-3 control-label">信息窗内容</label>
+							<div class="col-sm-3">
+								<textarea class="form-control" rows="3" id="textareaMaxLength" placeholder="信息窗内容" maxlength="100"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="url" class="col-sm-3 control-label">标记点经度</label>
+							<div class="col-sm-3">
+								<input id="input_type_height" type="text" class="form-control" maxlength="4">
+
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="url" class="col-sm-3 control-label">标记点纬度</label>
+							<div class="col-sm-3">
+								<input id="input_type_height" type="text" class="form-control" maxlength="4">
+
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="url" class="col-sm-3 control-label">使用说明</label>
+							<div class="col-sm-3">
+								<p>1、首先点击 <button type="submit">按钮</button>，拾取坐标</p>
+								<p>2、数据包含：当前层级、当前坐标点；</p>
+								<p>3、坐标点逗号前为经度值；</p>
+								<p>4、坐标点逗号后为纬度值；</p>
+								<p>5、将经纬度值复制到后台中的经纬度输入框，提交即可。</p>
+								<p>6、地图调用代码为 { template 'ditu.html' } ,复制后，请将里面空格删除 。</p>
+
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-sm-offset-3 col-sm-9">
+								<button type="submit" class="btn  btn-wide btn-lighter-1 ">提交</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="vendor/nano-scroller/nano-scroller.js"></script>
+		<script src="javascripts/template-script.min.js"></script>
+		<script src="javascripts/template-init.min.js"></script>
+	</body>
+
+</html>

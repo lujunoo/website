@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html xmlns=http://www.w3.org/1999/xhtml xmlns:bd=http://www.baidu.com/2010/xbdml>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>加盟信息填写</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<!--引入BootStrap——CSS-->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/Normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<!--引入BootStrap——JavaScript-->
+		<!--引入BootStrap之前先引入jQuery库-->
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<!--IE浏览器兼容-->
+		<!--[if lte IE 6]>
+			<script src="http://www.jq22.com/jquery/html5.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body style="background: #f8f8f8;">
+
+		<!--
+            	作者：1965496444@qq.com
+            	时间：2017-10-25
+            	描述：顶部导航栏
+            -->
+		<nav class="nav navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="navbar-header col-md-1 col-md-offset-2  text-right">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#HeadBrand" aria-expanded="false">
+							<span class="sr-only">toggle_navigtion</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="navbar-brand">
+							<a href="index.html">
+								<img height="100%" width="auto" src="img/logo.png" />
+							</a>
+						</div>
+					</div>
+
+					<ul id="contact-icon" class="col-md-3 col-xs-8 nav navbar-nav navbar-right ">
+						<li>
+							<a class="nav-consult nav-HOTLINE" href="contatc.html">
+								<span>加盟热线</span><br />
+								<small class="text-uppercase">JOIN THE HOTLINE</small>
+							</a>
+						</li>
+						<li>
+							<a class="nav-consult" href="contatc.html">
+								<span>详情咨询</span><br />
+								<small>CONSULTMG</small>
+							</a>
+						</li>
+
+
+					</ul>
+
+					<div id="HeadBrand" class="collapse navbar-collapse navbar-right  col-md-8">
+						<ul id="navbar-nav" class="nav navbar-nav">
+							<li class="">
+								<a href="about.html">
+									<span class="nav-text">关于鹅儿鹅</span>
+									<span class="text-uppercase">about eere</span>
+								</a>
+							</li>
+							<li>
+								<a href="JavaScript:void(0)">
+									<span class="nav-text">淘宝商城</span>
+									<span class="text-uppercase">Taobao Mall</span>
+								</a>
+								
+							</li>
+							<li>
+								<a href="product.html">
+									<span class="nav-text">产品展示</span>
+									<span class="text-uppercase">product center</span>
+								</a>
+								
+							</li>
+							<li>
+								<a href="Merchants-joined.html">
+									<span class="active nav-text">招商加盟</span>
+									<span style="display: block;" class="text-uppercase">join us</span>
+								</a>
+								
+							</li>
+							<li>
+								<a href="news.html">
+									<span class="nav-text">新闻资讯</span>
+									<span class="text-uppercase">news</span>
+								</a>
+
+							</li>
+							<li>
+								<a href="Recruitment.html">
+									<span class="nav-text">人才招聘</span>
+									<span class="text-uppercase">talent recruitment</span>
+								</a>
+								
+							</li>
+							<li>
+								<a href="contatc.html">
+									<span class="nav-text">联系我们</span>
+									<span class="text-uppercase">contact us</span>
+								</a>
+							</li>
+							<div class="clearfix"></div>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+		</nav>
+
+		<!--
+        	作者：1965496444@qq.com
+        	时间：2017-10-25
+        	描述：banner（相应式设计！兼容手机浏览器）
+       -->
+		<div class="container-fluid clear-container-fluid">
+			<a href="JavaScript:void(0)">
+				<img width="100%" src="img/ban4.jpg" />
+			</a>
+		</div>
+		<!--
+        	作者：1965496444@qq.com
+        	时间：2017-10-26
+        	描述：加盟表单
+       -->
+		<div class="container">
+			<div class="row join-form">
+				<div class="col-md-12">
+					<h4>加盟信息填写<br />
+       					<span>FILL IN THE INFORMATION</span>
+       				</h4>
+				</div>
+				<div class="col-md-10 join-form-item col-md-offset-2 col-xs-12 ">
+					<label><strong>*</strong>联系人</label>
+					<input type="text" />
+				</div>
+				<div class="col-md-10 join-form-item col-md-offset-2 col-xs-12 ">
+					<label><strong>*</strong>联系人手机号</label>
+					<input type="text" />
+				</div>
+				<div class="col-md-10 join-form-item col-md-offset-2 col-xs-12 ">
+					<label><strong>*</strong>申请城市</label>
+					<select name="province" id="province">
+						<option>选择省份</option>
+					</select>
+					<select  name="city" id="city">
+						<option>选择城市</option>
+					</select>
+				</div>
+				<div class="col-md-10  col-md-offset-2 col-sm-10  col-sm-offset-2 text-left  col-xs-12 ">
+					<img width="50%" src="img/join.jpg" />
+				</div>
+				<div class="col-md-10 join-form-item col-md-offset-1 col-sm-10 col-sm-offset-1 text-left  col-xs-12 ">
+					<input type="button" value="提交申请" />
+				</div>
+			</div>
+		</div>
+
+		</div>
+
+		<!--
+        	作者：1965496444@qq.com
+        	时间：2017-10-26
+        	描述：底部
+        -->
+		<div class="container footer-link">
+			<div class="row">
+				<div class="col-md-3 col-sm-5 col-xs-9 footer">
+					<a href="JavaScript:void(0)" class="footer-spanT">
+						<span>联系我们</span><br />
+						<span class="text-uppercase">contact us</span>
+					</a>
+					<a href="JavaScript:void(0)" class="footer-spanC">
+						<span style="font-size: 9px;">品牌热线online service</span><br />
+						<span style="font-size: 19px;font-weight: bold;">4008-050-525</span>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-5 col-xs-9 footer">
+					<a href="JavaScript:void(0)" class="footer-spanT">
+						<span>加入我们</span><br />
+						<span class="text-uppercase">&nbsp;j o i n&nbsp;&nbsp;u s&nbsp;</span>
+					</a>
+					<a href="JavaScript:void(0)" class="footer-spanC">
+						<span>企业加盟</span><br />
+						<span>人才招聘</span>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-5 col-xs-9 footer">
+					<a href="JavaScript:void(0)" class="footer-spanT">
+						<span>了解我们</span><br />
+						<span class="text-uppercase">k n o w&nbsp;&nbsp;u s</span>
+					</a>
+					<a href="JavaScript:void(0)" class="footer-spanC">
+						<span>企业简介</span><br />
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-4 col-sm-offset-0 col-xs-12 footer text-center">
+					<img src="img/erweima.png" />
+				</div>
+			</div>
+		</div>
+
+		<!--
+        	作者：1965496444@qq.com
+        	时间：2017-10-26
+        	描述：版权
+        -->
+		<div class="container-fluid copyright">
+			<p class="text-center text-uppercase">
+				<img src="img/copy.png" /> copyright©2011zhouheiya.all rights reservied<br /> 渝icp 备12345678号 技术支持：军翔白优
+			</p>
+		</div>
+
+		<!--
+        	作者：1965496444@qq.com
+        	时间：2017-10-26
+        	描述：浮动（客服咨询）
+        -->
+		<div class="contact-fixed">
+			<ul>
+				<li id="goTop">
+					<img src="img/float_icon1.png" />
+				</li>
+				<li onclick='function(){alert(' 你点击了在线咨询 ')}">
+        			<img src="img/float_icon2.png" />
+        		</li>
+        		<li class="QRcode">
+        			<img src="img/float_icon3.png" />
+        		</li>
+        	</ul>
+        </div>
+        <div class="erweima">
+        	<img src="img/erweima.png" />
+        </div>
+       
+	</body>
+	<script type="text/javascript" src="js/JavaScript.js"></script>
+	<!--城市选择-->
+	<script type="text/javascript" src="js/area.js" ></script>
+	<script type="text/javascript" src="js/select.js" ></script>
+
+</html>

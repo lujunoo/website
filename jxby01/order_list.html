@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>订单列表</title>
+		<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!--BootStrap_CSS-->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<!--js库-->
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<!--BootStrap_JS-->
+		<!--自定义css-->
+		<link rel="stylesheet" href="css/index_custom_css.css" />
+		<link rel="stylesheet" href="css/media_queries.css" />
+		<!--自定义js-->
+		<script type="text/javascript" src="js/index_custom_js.js"></script>
+	</head>
+
+	<body>
+	
+
+		<!--主体-->
+		<div class="col-md-12 jsfp">
+			<span style="width: 100px;" class="order_beian hide_td">备案</span>
+			<select class="role_Edit_fp order_beian">
+				<option>备案</option>
+				<option>不备案</option>
+
+			</select>
+			<span style="width: 100px;" class="order_beian hide_td">订单状态</span>
+			<select class="role_Edit_fp order_beian">
+				<option>前端</option>
+				<option>后台</option>
+				<option>优化</option>
+				<option>完成</option>
+			</select>
+			<input type="text" class="role_Edit_fp order_beian serch_order" value="输入你想搜索的内容" />
+			<span class="btn_info">搜索</span>
+		</div>
+
+		<table id="order_list" class="col-md-12 role_table">
+			<tbody class="role_tbody">
+				<tr class="role_tbody_title hide_td_tr">
+					<td style="width: 50px;"><input type="checkbox" onclick="allcheck(this)" /></td>
+					<td class="hide_td" style="width: 50px;">ID</td>
+					<td>是否加急</td>
+					<td>公司名称</td>
+					<td class="hide_td">老板姓名</td>
+					<td class="hide_td">域名</td>
+					<td class="hide_td">空间</td>
+					<td class="hide_td">备案</td>
+					<td class="hide_td">手机网站</td>
+					<td class="hide_td">负责人</td>
+					<td class="hide_td">负责人电话</td>
+					<td>签单人员</td>
+					<td class="hide_td">签单时间</td>
+					<td>订单状态</td>
+					<td class="hide_td">订单添加时间</td>
+					<td>操作</td>
+				</tr>
+
+				<tr class="hide_td_tr" >
+					<td><input type="checkbox" class="checked" /></td>
+					<td class="hide_td">1</td>
+					<td>是</td>
+					<td>军翔白优</td>
+					<td class="hide_td">卢军</td>
+					<td class="hide_td">www.baidu.com</td>
+					<td class="hide_td">军翔注册</td>
+					<td class="hide_td">不备案</td>
+					<td class="hide_td">需要</td>
+					<td class="hide_td">负责人</td>
+					<td class="hide_td">18212565715</td>
+					<td>唐伟</td>
+					<td class="hide_td">2017-03-21</td>
+					<td>前端</td>
+					<td class="hide_td">2017-03-21</td>
+					<td>
+						<span class="btn_info btn_info_edit" onclick="window.location.href='order_edit.html'">修改</span>
+						<span class="btn_info hide_td"onclick="window.location.href='order_detail.html'">查看</span>
+					</td>
+				</tr>
+				<tr class="hide_td_tr">
+					<td><input type="checkbox" class="checked" /></td>
+					<td class="hide_td">1</td>
+					<td>是</td>
+					<td>军翔白优</td>
+					<td class="hide_td">卢军</td>
+					<td class="hide_td">www.baidu.com</td>
+					<td class="hide_td">军翔注册</td>
+					<td class="hide_td">不备案</td>
+					<td class="hide_td">需要</td>
+					<td class="hide_td">负责人</td>
+					<td class="hide_td">18212565715</td>
+					<td>唐伟</td>
+					<td class="hide_td">2017-03-21</td>
+					<td>前端</td>
+					<td class="hide_td">2017-03-21</td>
+					<td>
+						<span class="btn_info btn_info_edit" onclick="window.location.href='order_edit.html'">修改</span>
+						<span class="btn_info hide_td"onclick="window.location.href='order_detail.html'">查看</span>
+					</td>
+				</tr>
+				<tr class="hide_td_tr">
+					<td><input type="checkbox" class="checked" /></td>
+					<td class="hide_td">1</td>
+					<td>是</td>
+					<td>军翔白优</td>
+					<td class="hide_td">卢军</td>
+					<td class="hide_td">www.baidu.com</td>
+					<td class="hide_td">军翔注册</td>
+					<td class="hide_td">不备案</td>
+					<td class="hide_td">需要</td>
+					<td class="hide_td">负责人</td>
+					<td class="hide_td">18212565715</td>
+					<td>唐伟</td>
+					<td class="hide_td">2017-03-21</td>
+					<td>前端</td>
+					<td class="hide_td">2017-03-21</td>
+					<td>
+						<span class="btn_info btn_info_edit" onclick="window.location.href='order_edit.html'">修改</span>
+						<span class="btn_info hide_td"onclick="window.location.href='order_detail.html'">查看</span>
+					</td>
+				</tr>
+				<tr class="hide_td_tr">
+					<td><input type="checkbox" class="checked" /></td>
+					<td class="hide_td">1</td>
+					<td>是</td>
+					<td>军翔白优</td>
+					<td class="hide_td">卢军</td>
+					<td class="hide_td">www.baidu.com</td>
+					<td class="hide_td">军翔注册</td>
+					<td class="hide_td">不备案</td>
+					<td class="hide_td">需要</td>
+					<td class="hide_td">负责人</td>
+					<td class="hide_td">18212565715</td>
+					<td>唐伟</td>
+					<td class="hide_td">2017-03-21</td>
+					<td>前端</td>
+					<td class="hide_td">2017-03-21</td>
+					<td>
+						<span class="btn_info btn_info_edit" onclick="window.location.href='order_edit.html'">修改</span>
+						<span class="btn_info hide_td"onclick="window.location.href='order_detail.html'">查看</span>
+					</td>
+				</tr>
+				<tr class="hide_td_tr">
+					<td><input type="checkbox" class="checked" /></td>
+					<td class="hide_td">1</td>
+					<td>是</td>
+					<td>军翔白优</td>
+					<td class="hide_td">卢军</td>
+					<td class="hide_td">www.baidu.com</td>
+					<td class="hide_td">军翔注册</td>
+					<td class="hide_td">不备案</td>
+					<td class="hide_td">需要</td>
+					<td class="hide_td">负责人</td>
+					<td class="hide_td">18212565715</td>
+					<td>唐伟</td>
+					<td class="hide_td">2017-03-21</td>
+					<td>前端</td>
+					<td class="hide_td">2017-03-21</td>
+					<td>
+						<span class="btn_info btn_info_edit" onclick="window.location.href='order_edit.html'">修改</span>
+						<span class="btn_info hide_td"onclick="window.location.href='order_detail.html'">查看</span>
+					</td>
+				</tr>
+				<tr class="hide_td_tr">
+					<td><input type="checkbox" class="checked" /></td>
+					<td class="hide_td">1</td>
+					<td>是</td>
+					<td>军翔白优</td>
+					<td class="hide_td">卢军</td>
+					<td class="hide_td">www.baidu.com</td>
+					<td class="hide_td">军翔注册</td>
+					<td class="hide_td">不备案</td>
+					<td class="hide_td">需要</td>
+					<td class="hide_td">负责人</td>
+					<td class="hide_td">18212565715</td>
+					<td>唐伟</td>
+					<td class="hide_td">2017-03-21</td>
+					<td>前端</td>
+					<td class="hide_td">2017-03-21</td>
+					<td>
+						<span class="btn_info btn_info_edit" onclick="window.location.href='order_edit.html'">修改</span>
+						<span class="btn_info hide_td"onclick="window.location.href='order_detail.html'">查看</span>
+					</td>
+				</tr>
+
+				<tr class="hide_td_tr">
+					<td><input type="checkbox" class="checked" /></td>
+					<td class="hide_td">1</td>
+					<td>是</td>
+					<td>军翔白优</td>
+					<td class="hide_td">卢军</td>
+					<td class="hide_td">www.baidu.com</td>
+					<td class="hide_td">军翔注册</td>
+					<td class="hide_td">不备案</td>
+					<td class="hide_td">需要</td>
+					<td class="hide_td">负责人</td>
+					<td class="hide_td">18212565715</td>
+					<td>唐伟</td>
+					<td class="hide_td">2017-03-21</td>
+					<td>前端</td>
+					<td class="hide_td">2017-03-21</td>
+					<td>
+						<span class="btn_info btn_info_edit" onclick="window.location.href='order_edit.html'">修改</span>
+						<span class="btn_info hide_td"onclick="window.location.href='order_detail.html'">查看</span>
+					</td>
+				</tr>
+				<tr class="hide_td_tr">
+					<td><input type="checkbox" class="checked" /></td>
+					<td class="hide_td">1</td>
+					<td>是</td>
+					<td>军翔白优</td>
+					<td class="hide_td">卢军</td>
+					<td class="hide_td">www.baidu.com</td>
+					<td class="hide_td">军翔注册</td>
+					<td class="hide_td">不备案</td>
+					<td class="hide_td">需要</td>
+					<td class="hide_td">负责人</td>
+					<td class="hide_td">18212565715</td>
+					<td>唐伟</td>
+					<td class="hide_td">2017-03-21</td>
+					<td>前端</td>
+					<td class="hide_td">2017-03-21</td>
+					<td>
+						<span class="btn_info btn_info_edit" onclick="window.location.href='order_edit.html'">修改</span>
+						<span class="btn_info hide_td"onclick="window.location.href='order_detail.html'">查看</span>
+					</td>
+				</tr>
+
+				<tr class="hide_td_tr">
+					<td><input type="checkbox" class="checked" /></td>
+					<td class="hide_td">1</td>
+					<td>是</td>
+					<td>军翔白优</td>
+					<td class="hide_td">卢军</td>
+					<td class="hide_td">www.baidu.com</td>
+					<td class="hide_td">军翔注册</td>
+					<td class="hide_td">不备案</td>
+					<td class="hide_td">需要</td>
+					<td class="hide_td">负责人</td>
+					<td class="hide_td">18212565715</td>
+					<td>唐伟</td>
+					<td class="hide_td">2017-03-21</td>
+					<td>前端</td>
+					<td class="hide_td">2017-03-21</td>
+					<td>
+						<span class="btn_info btn_info_edit" onclick="window.location.href='order_edit.html'">修改</span>
+						<span class="btn_info hide_td"onclick="window.location.href='order_detail.html'">查看</span>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+		<div class="col-md-12 jsfp ">
+			<span class="btn_info">上一页</span>
+			<span class="btn_info btn_active">1</span>
+			<span class="btn_info">1/4</span>
+			<span class="btn_info">下一页</span>
+		</div>
+		<div class="col-md-12 jsfp">
+			<span style="width: 100px;">订单状态</span>
+			<select class="role_Edit_fp">
+				<option>前端</option>
+				<option>后台</option>
+				<option>优化</option>
+				<option>完成</option>
+			</select>
+			<span class="btn_info">设置</span>
+			<span class="btn_info">删除</span>
+
+		</div>
+
+	</body>
+
+</html>

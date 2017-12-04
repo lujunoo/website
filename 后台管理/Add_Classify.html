@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en" class="fixed">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>添加分类</title>
+		<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
+		<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+		<link rel="stylesheet" href="stylesheets/css/style.css">
+		<link rel="stylesheet" href="stylesheets/css/index_css.css" />
+		<script type="text/javascript" src="javascripts/jquery-2.1.0.js" ></script>
+
+	</head>
+
+	<body style="background: white;">
+		<div class="tabs" style="padding-top: 30px;">
+			<ul class="nav nav-tabs nav-justified">
+				<li class="active">
+					<a href="#home2" data-toggle="tab" aria-expanded="true">基本信息</a>
+				</li>
+				<li class="">
+					<a href="#profile2" data-toggle="tab" aria-expanded="false">SEO信息</a>
+				</li>
+				<li class="">
+					<a href="#messages2" data-toggle="tab" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i>属性设置</a>
+				</li>
+				<li class="">
+					<a href="#settings2" data-toggle="tab" aria-expanded="false">扩展信息</a>
+				</li>
+				<li class="">
+					<a href="#shenhe2" data-toggle="tab" aria-expanded="false">
+						</i>权限审核</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<!--基本信息-->
+				<div class="tab-pane fade active in" id="home2">
+
+					<div class="" style="margin: 50px 0;">
+						<div class="panel-content">
+							<div class="row">
+								<div class="col-md-12">
+									<form id="inline-validation" class="form-horizontal form-stripe" novalidate="novalidate">
+
+										<div class="form-group">
+											<label for="username" class="col-sm-3 control-label">上级分类</label>
+											<div class="col-sm-3">
+												<select class="form-control">
+													<option>中文</option>
+													<option>中文</option>
+													<option>中文</option>
+													<option>中文</option>
+													<option>中文</option>
+												</select>
+											</div>
+
+										</div>
+										<div class="form-group">
+											<label for="email" class="col-sm-3 control-label">分类名称</label>
+											<div class="col-sm-3">
+												<input type="text" class="form-control" name="email" required="" aria-required="true">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label for="age" class="col-sm-3 control-label">分类副标题</label>
+											<div class="col-sm-3">
+												<input type="text" class="form-control" name="confirmation" required="" aria-required="true">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="url" class="col-sm-3 control-label">目录名称</label>
+											<div class="col-sm-3">
+												<input type="text" class="form-control" name="confirmation" required="" aria-required="true">
+											</div>
+										</div>
+
+										<div class="col-md-7 text-center">
+											<button class="btn btn-wide btn-o btn-lighter-1" style="margin-left: 30px;">提交</button>
+										</div>
+
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--SEO信息-->
+				<div class="tab-pane fade" id="profile2">
+
+					<div class="" style="margin: 50px 0;">
+						<div class="panel-content">
+							<div class="row">
+								<div class="col-md-12">
+									<form id="inline-validation" class="form-horizontal form-stripe" novalidate="novalidate">
+										<div class="form-group">
+											<label for="name" class="col-sm-3 control-label">网页标题</label>
+											<div class="col-sm-3">
+												<input type="text" class="form-control" name="email" required="" aria-required="true">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="email" class="col-sm-3 control-label">关键词</label>
+											<div class="col-sm-3">
+												<input type="text" class="form-control" name="email" required="" aria-required="true">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="url" class="col-sm-3 control-label">网页描述</label>
+											<div class="col-sm-3">
+												<textarea class="form-control" rows="3" placeholder="Write a comment" maxlength="100"></textarea>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="cofirmation" class="col-sm-3 control-label">URL规则</label>
+											<div class="col-sm-3">
+												<input type="text" maxlength="4" class="form-control" name="confirmation" required="" aria-required="true">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="age" class="col-sm-3 control-label">当前分类</label>
+											<div class="col-sm-3">
+												<select class="form-control" style="margin-bottom: 10px;">
+													<option>中文</option>
+													<option>中文</option>
+													<option>中文</option>
+													<option>中文</option>
+													<option>中文</option>
+												</select>
+												<input type="text" maxlength="4" class="form-control" name="confirmation" required="" aria-required="true">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="url" class="col-sm-3 control-label">列表页</label>
+											<div class="col-sm-3">
+
+												<input type="text" maxlength="5" class="form-control" name="confirmation" required="" aria-required="true">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label for="url" class="col-sm-3 control-label">标记</label>
+											<div class="col-sm-3">
+
+												<input type="text" maxlength="5" class="form-control" name="confirmation" required="" aria-required="true">
+											</div>
+										</div>
+										<div class="col-md-7 text-center">
+											<button class="btn btn-wide btn-o btn-lighter-1" style="margin-left: 30px;">提交</button>
+										</div>
+
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--属性设置-->
+				<div class="tab-pane fade" id="messages2">
+
+					<div class="" style="margin: 50px 0;">
+						<div class="panel-content">
+							<div class="row">
+								<div class="col-md-12">
+									<form id="inline-validation" class="form-horizontal form-stripe" novalidate="novalidate">
+										<div class="form-group">
+											<label for="url" class="col-sm-3 control-label">是否启用</label>
+											<div class="col-sm-3">
+												<div class="radio radio-custom radio-inline">
+													<input type="radio" id="radioCustom1" name="CustomInlineOptionsRadios" value="option1" checked="">
+													<label for="radioCustom1">正常</label>
+												</div>
+												<div class="radio radio-custom radio-inline radio-primary">
+													<input type="radio" id="radioCustom2" name="CustomInlineOptionsRadios" value="option2">
+													<label for="radioCustom2">禁用</label>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="name" class="col-sm-3 control-label">当前使用模板</label>
+											<div class="col-sm-3">
+												<select class="form-control">
+													<option>开</option>
+													<option>关</option>
+													<option>始终</option>
+												</select>
+
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label for="url" class="col-sm-3 control-label">所属下级列表页模板</label>
+											<div class="col-sm-3">
+												<select class="form-control">
+													<option>上弹</option>
+													<option>圆形</option>
+													<option>平铺</option>
+
+												</select>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label for="url" class="col-sm-3 control-label">动静态设置</label>
+											<div class="col-sm-3">
+												<div class="radio radio-custom radio-inline">
+													<input type="radio" id="radioCustom3" name="CustomOptionsRadios" value="option3" checked="">
+													<label for="radioCustom1">继承</label>
+												</div>
+												<div class="radio radio-custom radio-inline radio-primary">
+													<input type="radio" id="radioCustom4" name="CustomOptionsRadios" value="option4">
+													<label for="radioCustom2">生成</label>
+												</div>
+												<!--<div class="radio radio-custom radio-inline radio-primary">
+													<input type="radio" id="radioCustom5" name="CustomOptionsRadios" value="option3">
+													<label for="radioCustom2">不生成</label>
+												</div>-->
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="url" class="col-sm-3 control-label">分页设置</label>
+											<div class="col-sm-3">
+												<div class="radio radio-custom radio-inline">
+													<input type="radio" id="radioCustom5" name="inlineRadioOptions" value="option5" checked="">
+													<label for="radioCustom1">分页</label>
+												</div>
+												<div class="radio radio-custom radio-inline radio-primary">
+													<input type="radio" id="radioCustom6" name="inlineRadioOptions" value="option6">
+													<label for="radioCustom2">单页</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label for="url" class="col-sm-3 control-label">子内容设置</label>
+											<div class="col-sm-3">
+												<div class="radio radio-custom radio-inline">
+													<input type="radio" id="radioCustom7" name="CustomInlineOptionsRadios" value="option7" checked="">
+													<label for="radioCustom1">包含</label>
+												</div>
+												<div class="radio radio-custom radio-inline radio-primary">
+													<input type="radio" id="radioCustom8" name="CustomInlineOptionsRadios" value="option8">
+													<label for="radioCustom2">不包含</label>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="url" class="col-sm-3 control-label">外部链接</label>
+											<div class="col-sm-3">
+												<input type="text" class="form-control" name="email" required="" aria-required="true">
+											</div>
+										</div>
+
+										<div class="col-md-7 text-center">
+											<button class="btn btn-wide btn-o btn-lighter-1" style="margin-left: 30px;">提交</button>
+										</div>
+
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--扩展信息-->
+				<div class="tab-pane fade" id="settings2">
+
+					<div class="" style="margin: 50px 0; ">
+						<div class="panel-content">
+							<div class="row">
+								<div class="col-md-12">
+									<form id="inline-validation" class="form-horizontal form-stripe" novalidate="novalidate">
+										<div class="form-group" style="height: 600px;">
+											<label for="name" class="col-sm-3 control-label">封面内容</label>
+											<div class="col-sm-8" style="height: 400px;">
+
+												<script type="text/javascript" charset="utf-8" src="ueditor.config.js"></script>
+												<script type="text/javascript" charset="utf-8" src="ueditor.all.min.js">
+												</script>
+
+												<script type="text/javascript" charset="utf-8" src="lang/zh-cn/zh-cn.js"></script>
+												<textarea id="editor" type="text/plain" style="width:100%;height:100%;"></textarea>
+
+												<script type="text/javascript">
+													var ue = UE.getEditor('editor');
+												</script>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="name" class="col-sm-3 control-label">分类说明图片</label>
+											<div class="col-sm-3">
+												<input type="file" class="form-control" style="padding: 4px 0 0 5px;" name="url">
+											</div>
+										</div>
+
+										<div class="col-md-7 text-center">
+											<button class="btn btn-wide btn-o btn-lighter-1" style="margin-left: 30px;">提交</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!--权限审核-->
+				<div class="tab-pane fade" id="shenhe2">
+
+					<div class="" style="margin: 50px 0; ">
+						<div class="panel-content">
+							<div class="row">
+								<div class="col-md-12">
+									<form id="inline-validation" class="form-horizontal form-stripe" novalidate="novalidate">
+
+										<div class="table-responsive">
+											<table class="table table-hover">
+												<thead>
+													<tr>
+														<th>会员组</th>
+														<th>浏览</th>
+														<th>下载</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>会员组</td>
+														<td><input class="lm_checkbox" type="checkbox"></td>
+														<td><input class="lm_checkbox" type="checkbox"></td>
+													</tr>
+													<tr>
+														<td>文章管理员</td>
+														<td><input class="lm_checkbox" type="checkbox"></td>
+														<td><input class="lm_checkbox" type="checkbox"></td>
+													</tr>
+													<tr>
+														<td>一般会员</td>
+														<td><input class="lm_checkbox" type="checkbox"></td>
+														<td><input class="lm_checkbox" type="checkbox"></td>
+													</tr>
+													<tr>
+														<td>游客</td>
+														<td><input class="lm_checkbox" type="checkbox"></td>
+														<td><input class="lm_checkbox" type="checkbox"></td>
+													</tr>
+
+												</tbody>
+											</table>
+										</div>
+
+										<div class="form-group">
+											<label for="url" class="col-sm-3 control-label" style="color: red;"> 注意：勾选为该用户组禁止浏览或下载</label>
+
+										</div>
+
+										<button class="btn btn-wide btn-o btn-lighter-1" style="margin-left: 30px;">提交</button>
+
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<script src="javascripts/bootstrap.min.js"></script>
+		<script src="javascripts/template-script.min.js"></script>
+	</body>
+
+</html>

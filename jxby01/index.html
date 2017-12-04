@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>军翔白优后台管理</title>
+		<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!--BootStrap_CSS-->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<!--js库-->
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<!--BootStrap_JS-->>
+		
+		<!--自定义css-->
+		<link rel="stylesheet" href="css/index_custom_css.css" />
+		<link rel="stylesheet" href="css/media_queries.css" />
+		<!--自定义js-->
+		<script type="text/javascript" src="js/index_custom_js.js"></script>
+	</head>
+
+	<body>
+		<!--背景-->
+		<canvas id="canvas"></canvas>
+		<a href="#" id="warp" style="display: none;"></a>
+		<script type="text/javascript" src="js/bg_js_2.js"></script>
+
+		<!--主页-->
+		<div class="container-fluid">
+			<!--顶部-->
+			<div class="col-md-12 index_top ">
+				<h1 class="index_top_text">你好！admin <span class="back">退出</span> </h1>
+			</div>
+			<!--主体-->
+			<div class="col-md-12 container_mian">
+				<!--手机版菜单栏-->
+				<div class="col-md-12 index_main_top_ph">
+					<span class="glyphicon glyphicon-list index_main_top_ph_icon"></span>
+					<span class="index_main_top_ph_name">控制台管理</span>
+					<div class="clear"></div>
+					<ul class="index_main_ph_menu">
+						<li>
+							<a href="#none" class="ph_click"><span class="glyphicon glyphicon-globe"></span>角色管理</a>
+							<div class="ph_menu_ul">
+								<div class="ph_menu_ul_li" link="role_management_list.html"><em class="glyphicon glyphicon-pencil"></em>角色列表</div>
+								<div class="ph_menu_ul_li" link="role_management_add.html"><em class="glyphicon glyphicon-pencil"></em>角色添加</div>
+							</div>
+						</li>
+						<li>
+							<a href="#none" class="ph_click"><span class="glyphicon glyphicon-user"></span>管理员管理</a>
+							<div class="ph_menu_ul">
+								<div class="ph_menu_ul_li" link="administrator_list.html"><em class="glyphicon glyphicon-pencil"></em>管理员列表</div>
+								<div class="ph_menu_ul_li" link="administrator_add.html"><em class="glyphicon glyphicon-pencil"></em>添加管理员</div>
+							</div>
+						</li>
+						<li>
+							<a href="#none" class="ph_click"><span class="glyphicon glyphicon-list-alt"></span>订单管理</a>
+							<div class="ph_menu_ul">
+								<div class="ph_menu_ul_li" link="order_list.html"><em class="glyphicon glyphicon-pencil"></em>订单列表</div>
+								<div class="ph_menu_ul_li" link="order_add.html"><em class="glyphicon glyphicon-pencil"></em>添加订单</div>
+							</div>
+						</li>
+						<li>
+							<a href="#none" class="ph_click"><span class="glyphicon glyphicon-picture"></span>效果图管理</a>
+							<div class="ph_menu_ul">
+								<div class="ph_menu_ul_li" link="effectPicture_list.html"><em class="glyphicon glyphicon-pencil"></em>效果图列表</div>
+								<div class="ph_menu_ul_li" link="effectPicture_add.html"><em class="glyphicon glyphicon-pencil"></em>添加效果图</div>
+							</div>
+						</li>
+						<li>
+							<a href="#none" class="ph_click"><span class="glyphicon glyphicon-blackboard"></span>职员管理</a>
+							<div class="ph_menu_ul">
+								<div class="ph_menu_ul_li" link="staff_list.html"><em class="glyphicon glyphicon-pencil"></em>职员列表</div>
+								<div class="ph_menu_ul_li" link="staff_add.html"><em class="glyphicon glyphicon-pencil"></em>添加职员</div>
+							</div>
+						</li>
+						<li>
+							<a href="#none" class="ph_click"><span class="glyphicon glyphicon-briefcase"></span>外出登记管理</a>
+							<div class="ph_menu_ul">
+								<div class="ph_menu_ul_li" link="egressRegister_list.html"><em class="glyphicon glyphicon-pencil"></em>外出记录列表</div>
+								<div class="ph_menu_ul_li" link="egressRegister_add.html"><em class="glyphicon glyphicon-pencil"></em>添加外出登记</div>
+							</div>
+						</li>
+						<li>
+							<a href="#none" class="ph_click"><span class="glyphicon glyphicon-zoom-in"></span>意向客户管理</a>
+							<div class="ph_menu_ul">
+								<div class="ph_menu_ul_li" link="potentialClients_list.html"><em class="glyphicon glyphicon-pencil"></em>意向客户列表</div>
+								<div class="ph_menu_ul_li" link="potentialClients_add.html"><em class="glyphicon glyphicon-pencil"></em>添加意向客户</div>
+							</div>
+						</li>
+						<li>
+							<a href="#none" class="ph_click"><span class="glyphicon glyphicon-book"></span>计划管理</a>
+							<div class="ph_menu_ul">
+								<div class="ph_menu_ul_li" link="plan_list.html"><em class="glyphicon glyphicon-pencil"></em>计划列表</div>
+								<div class="ph_menu_ul_li" link="plan_add.html"><em class="glyphicon glyphicon-pencil"></em>添加计划</div>
+							</div>
+						</li>
+						<li>
+							<a href="#none" class="ph_click"><span class="glyphicon glyphicon-usd"></span>收入管理</a>
+							<div class="ph_menu_ul">
+								<div class="ph_menu_ul_li" link="income_list.html"><em class="glyphicon glyphicon-pencil"></em>收入明细</div>
+								<div class="ph_menu_ul_li" link="income_add.html"><em class="glyphicon glyphicon-pencil"></em>添加明细</div>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+
+				<!--左边菜单栏-->
+				<div class="col-md-2 index_main_left">
+
+					<ul class="menu">
+						<div class="index_kzt">
+							<span class="title-icon glyphicon glyphicon-home"></span>
+							<span class="test">管理控制台</span>
+						</div>
+						<li class="level1">
+							<a href="#none"><span class="glyphicon glyphicon-globe"></span>角色管理<i class="down"></i></a>
+							<ul class="level2">
+								<li link="role_management_list.html">
+									<a href="javascript:;"><em class="glyphicon glyphicon-tasks"></em>角色列表</a>
+								</li>
+								<li link="role_management_add.html">
+									<a href="javascript:;"><em class="glyphicon glyphicon-pencil"></em>角色添加</a>
+								</li>
+
+							</ul>
+						</li>
+						<li class="level1">
+							<a href="#none"><span class="glyphicon glyphicon-user"></span>管理员管理<i></i></a>
+							<ul class="level2">
+								<li link="administrator_list.html">
+									<a href="javascript:;"><em class="glyphicon glyphicon-tasks"></em>管理员列表</a>
+								</li>
+								<li link="administrator_add.html">
+									<a href="javascript:;"><em class="glyphicon glyphicon-pencil"></em>添加管理员</a>
+								</li>
+
+							</ul>
+						</li>
+						<li class="level1">
+							<a href="#none"><span class="glyphicon glyphicon-list-alt"></span>订单管理<i></i></a>
+							<ul class="level2">
+								<li link="order_list.html">
+									<a href="javascript:;"><em class="glyphicon glyphicon-tasks"></em>订单列表</a>
+								</li>
+								<li link="order_add.html">
+									<a href="javascript:;"><em class="glyphicon glyphicon-pencil"></em>添加订单</a>
+								</li>
+
+							</ul>
+						</li>
+						<li class="level1">
+							<a href="#none"><span class="glyphicon glyphicon-picture"></span>效果图管理<i></i></a>
+							<ul class="level2">
+								<li link="effectPicture_list.html">
+									<a href="javascript:;"><em class="glyphicon glyphicon-tasks"></em>效果图列表</a>
+								</li>
+								<li link="effectPicture_add.html">
+									<a href="javascript:;"><em class="glyphicon glyphicon-pencil"></em>添加效果图</a>
+								</li>
+
+							</ul>
+						</li>
+						<li class="level1">
+							<a href="#none"><span class="glyphicon glyphicon-blackboard"></span>职员管理<i></i></a>
+							<ul class="level2">
+								<li link="staff_list.html">
+									<a href="javascript:;"><em class="glyphicon glyphicon-tasks"></em>职员列表</a>
+								</li>
+								<li link="staff_add.html">
+									<a href="javascript:;"><em class="glyphicon glyphicon-pencil"></em>添加职员</a>
+								</li>
+
+							</ul>
+						</li>
+						<li class="level1">
+							<a href="#none"><span class="glyphicon glyphicon-briefcase"></span>外出登记管理<i></i></a>
+							<ul class="level2">
+								<li link="egressRegister_list.html">
+									<a href="javascript:;"><em class="glyphicon glyphicon-tasks"></em>外出登记列表</a>
+								</li>
+								<li link="egressRegister_add.html">
+									<a href="javascript:;"><em class="glyphicon glyphicon-pencil"></em>添加外出记录</a>
+								</li>
+
+							</ul>
+						</li>
+						<li class="level1">
+							<a href="#none"><span class="glyphicon glyphicon-zoom-in"></span>意向客户管理<i></i></a>
+							<ul class="level2">
+								<li link="potentialClients_list.html">
+									<a href="javascript:;"><em class="glyphicon glyphicon-tasks"></em>意向客户列表</a>
+								</li>
+								<li link="potentialClients_add.html">
+									<a href="javascript:;"><em class="glyphicon glyphicon-pencil"></em>添加意向客户</a>
+								</li>
+
+							</ul>
+						</li>
+						<li class="level1">
+							<a href="#none"><span class="glyphicon glyphicon-book"></span>计划管理<i></i></a>
+							<ul class="level2">
+								<li link="plan_list.html">
+									<a href="javascript:;"><em class="glyphicon glyphicon-tasks"></em>计划列表</a>
+								</li>
+								<li link="plan_add.html">
+									<a href="javascript:;"><em class="glyphicon glyphicon-pencil"></em>添加计划</a>
+								</li>
+
+							</ul>
+						</li>
+						<li class="level1">
+							<a href="#none"><span class="glyphicon glyphicon-usd"></span>收入管理<i></i></a>
+							<ul class="level2">
+								<li link="income_list.html">
+									<a href="javascript:;"><em class="glyphicon glyphicon-tasks"></em>收入明细</a>
+								</li>
+								<li link="income_add.html">
+									<a href="javascript:;"><em class="glyphicon glyphicon-pencil"></em>添加明细</a>
+								</li>
+
+							</ul>
+						</li>
+					
+					</ul>
+
+					<script type="text/javascript" src="js/easing.js"></script>
+
+				</div>
+
+				<!--右边主页-->
+				<div class="col-md-10 index_main_right">
+					<div style="width: 100%;height: 700px;">
+						<iframe id="iframepage"  height="100%" name="iframepage" width="100%" scrolling="yes" src="wellCome.html" frameborder="no"></iframe>
+					</div>
+					
+				
+				</div>
+				
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

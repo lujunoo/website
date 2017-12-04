@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>详情页</title>
+		<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!--BootStrap_CSS-->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<!--js库-->
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<!--BootStrap_JS-->
+		<script src="js/laydate/laydate.js"></script>
+		<!--自定义css-->
+		<link rel="stylesheet" href="css/index_custom_css.css" />
+		 <link rel="stylesheet" href="css/media_queries.css" />
+		<!--自定义js-->
+		<script type="text/javascript" src="js/index_custom_js.js"></script>
+	</head>
+
+	<body>
+			<script>
+				window.onload=function(){
+					
+					$(".order_table td").css("border","0");
+					$(".order_add_title").css({
+						"color":"white",
+						"text-align":"right"
+					})
+					
+				}
+			</script>
+	
+			<table id="order_lidt_add" class="col-md-12 order_table"style="border: none;">
+				<tbody>
+					<tr style="background: rgba(0,245,255,0.1);">
+						<td class="col-md-1 " colspan="8">客户信息</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">是否加急</td>
+						<td class="col-md-2 order_add_info">加急</td>
+						<td class="col-md-1 order_add_title">公司名称</td>
+						<td class="col-md-2 order_add_info">军翔白优</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">传真</td>
+						<td class="col-md-2 order_add_info">234234243</td>
+						<td class="col-md-1 order_add_title">公司邮箱</td>
+						<td class="col-md-2 order_add_info">345394858@qq.com</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">公司地址</td>
+						<td class="col-md-2 order_add_info">重庆市观音桥</td>
+						<td class="col-md-1 order_add_title">老板姓名</td>
+						<td class="col-md-2 order_add_info">卢军</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">电话</td>
+						<td class="col-md-2 order_add_info">123423423423</td>
+						<td class="col-md-1 order_add_title">邮箱</td>
+						<td class="col-md-2 order_add_info">232423423@qq.com</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">负责人</td>
+						<td class="col-md-2 order_add_info">唐伟</td>
+						<td class="col-md-1 order_add_title">负责人电话</td>
+						<td class="col-md-2 order_add_info">14234233424</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">负责人邮箱</td>
+						<td class="col-md-2 order_add_info">2342342@qq.com</td>
+						<td class="col-md-1 order_add_title">座机</td>
+						<td class="col-md-2 order_add_info">023423423</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">负责人邮箱</td>
+						<td class="col-md-2 order_add_info">2342342@qq.com</td>
+						<td class="col-md-1 order_add_title">座机</td>
+						<td class="col-md-2 order_add_info">023423423</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">签单人员</td>
+						<td class="col-md-2 order_add_info">唐伟</td>
+						<td class="col-md-1 order_add_title">签单时间</td>
+						<td class="col-md-2 order_add_info">2017-05-02</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">备注</td>
+						<td class="col-md-2 order_add_info" colspan="8">啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</td>
+					</tr>
+					<tr style="background: rgba(0,245,255,0.1);">
+						<td class="col-md-1 " colspan="8">空间域名</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">域名注册</td>
+						<td class="col-md-2 order_add_info">www.baidu.com</td>
+						<td class="col-md-1 order_add_title">空间注册</td>
+						<td class="col-md-2 order_add_info">客户自有</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">是否备案</td>
+						<td class="col-md-2 order_add_info">否</td>
+						<td class="col-md-1 order_add_title">手机版</td>
+						<td class="col-md-2 order_add_info">需要</td>
+					</tr>
+					<tr style="background: rgba(0,245,255,0.1);">
+						<td class="col-md-1 " colspan="8">需求及资料</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">网站导航</td>
+						<td class="col-md-2 order_add_info" colspan="8">啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">资料情况</td>
+						<td class="col-md-2 order_add_info" colspan="8">啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">首页关键词</td>
+						<td class="col-md-2 order_add_info" colspan="8">啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">优化要求</td>
+						<td class="col-md-2 order_add_info" colspan="8">啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</td>
+					</tr>
+					<tr style="background: rgba(0,245,255,0.1);">
+						<td class="col-md-1 " colspan="8">网站对接</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">前端开始时间</td>
+						<td class="col-md-2 order_add_info">2017-05-02</td>
+						<td class="col-md-1 order_add_title">前端结束时间	</td>
+						<td class="col-md-2 order_add_info">2017-05-02</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">后端开始时间</td>
+						<td class="col-md-2 order_add_info">2017-05-02</td>
+						<td class="col-md-1 order_add_title">后端结束时间</td>
+						<td class="col-md-2 order_add_info">2017-05-02</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">空间开通</td>
+						<td class="col-md-2 order_add_info">2017-05-02</td>
+						<td class="col-md-1 order_add_title">域名解析</td>
+						<td class="col-md-2 order_add_info">2017-05-02</td>
+					</tr>
+					<tr>
+						<td class="col-md-1 order_add_title">整站确认</td>
+						<td class="col-md-2 order_add_info">2017-05-02</td>
+					</tr>
+					
+					
+				</tbody>
+			</table>
+			
+
+	</body>
+
+</html>

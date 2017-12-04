@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>添加订单</title>
+		<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!--BootStrap_CSS-->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<!--js库-->
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<!--BootStrap_JS-->
+		<script src="js/laydate/laydate.js"></script>
+		<!--自定义css-->
+		<link rel="stylesheet" href="css/index_custom_css.css" />
+		<link rel="stylesheet" href="css/media_queries.css" />
+		<!--自定义js-->
+		<script type="text/javascript" src="js/index_custom_js.js"></script>
+	</head>
+
+	<body>
+
+		<!--主体-->
+
+		<div class="col-md-12 jsfp">
+			<span>是否加急</span>
+			<select class="role_Edit_fp">
+				<option>加急</option>
+				<option>不加急</option>
+			</select>
+		</div>
+	
+
+		<table id="order_lidt_add" class="col-md-12 order_table">
+			<tbody>
+				<tr class="table_tr_header">
+					<td class="col-md-12" colspan=12 style="font-size: 18px;">客户信息</td>
+				</tr>
+				
+				<tr>
+					<td class="col-md-1 order_add_title">公司名称</td>
+					<td class="col-md-2 order_add_info"><input type="text" class="role_Edit_fp" style="border: none;" /></td>
+					<td class="col-md-1 order_add_title">传真</td>
+					<td class="col-md-2 order_add_info"><input type="text" class="role_Edit_fp" style="border: none;" /></td>
+					<td class="col-md-1 order_add_title">公司邮箱</td>
+					<td class="col-md-2 order_add_info"><input type="text" class="role_Edit_fp" style="border: none;" /></td>
+					<td class="col-md-1 order_add_title">公司地址</td>
+					<td class="col-md-2 order_add_info"><input type="text" class="role_Edit_fp" style="border: none;" /></td>
+				</tr>
+				<tr>
+					<td class="col-md-1 order_add_title">老板姓名</td>
+					<td class="col-md-2 order_add_info"><input type="text" class="role_Edit_fp" style="border: none;" /></td>
+					<td class="col-md-1 order_add_title">电话</td>
+					<td class="col-md-2 order_add_info"><input type="text" class="role_Edit_fp" style="border: none;" /></td>
+					<td class="col-md-1 order_add_title">邮箱</td>
+					<td class="col-md-2 order_add_info"><input type="text" class="role_Edit_fp" style="border: none;" /></td>
+					<td class="col-md-1 order_add_title">负责人</td>
+					<td class="col-md-2 order_add_info"><input type="text" class="role_Edit_fp" style="border: none;" /></td>
+				</tr>
+				<tr>
+					<td class="col-md-1 order_add_title">负责人电话</td>
+					<td class="col-md-2 order_add_info"><input type="text" class="role_Edit_fp" style="border: none;" /></td>
+					<td class="col-md-1 order_add_title">负责人邮箱</td>
+					<td class="col-md-2 order_add_info"><input type="text" class="role_Edit_fp" style="border: none;" /></td>
+					<td class="col-md-1 order_add_title">座机</td>
+					<td class="col-md-2 order_add_info"><input type="text" class="role_Edit_fp" style="border: none;" /></td>
+					<td class="col-md-1 order_add_title">签单人员</td>
+					<td class="col-md-2 order_add_info">
+						<select class="role_Edit_fp table_select">
+							<option>唐伟</option>
+							<option>唐伟</option>
+							<option>唐伟</option>
+							<option>唐伟</option>
+							<option>唐伟</option>
+							<option>唐伟</option>
+							<option>唐伟</option>
+							<option>唐伟</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="col-md-1 order_add_title">签单时间</td>
+					<td class="col-md-2 order_add_info"><input type="text" onclick="laydate()" class="role_Edit_fp" style="border: none;" /></td>
+					<td class="col-md-1 order_add_title">备注</td>
+					<td class="col-md-2 order_add_info" colspan=5><input type="text" class="role_Edit_fp" style="border: none;" /></td>
+				</tr>
+				<tr class=" table_tr_header">
+					<td class="col-md-12" colspan=12 style="font-size: 18px;">空间域名</td>
+				</tr>
+				<tr>
+					<td class="col-md-1 order_add_title">军翔注册(域名)</td>
+					<td class="col-md-2 order_add_info"><input type="text" class="role_Edit_fp" style="border: none;" /></td>
+					<td class="col-md-1 order_add_title">客户自有(域名)</td>
+					<td class="col-md-2 order_add_info"><input type="text" class="role_Edit_fp" style="border: none;" /></td>
+					<td class="col-md-1 order_add_title">军翔注册(空间)</td>
+					<td class="col-md-2 order_add_info"><input type="text" class="role_Edit_fp" style="border: none;" /></td>
+					<td class="col-md-1 order_add_title">客户自有(空间)</td>
+					<td class="col-md-2 order_add_info"><input type="text" class="role_Edit_fp" style="border: none;" /></td>
+				</tr>
+				<tr>
+					<td class="col-md-1 order_add_title">是否备案</td>
+					<td class="col-md-2 order_add_info" colspan=3><input type="text" class="role_Edit_fp" style="border: none;" /></td>
+					<td class="col-md-1 order_add_title">是否需要手机版</td>
+					<td class="col-md-2 order_add_info" colspan=3><input type="text" class="role_Edit_fp" style="border: none;" /></td>
+				</tr>
+				<tr class=" table_tr_header">
+					<td class="col-md-12" colspan=12 style="font-size: 18px;">需求及资料</td>
+				</tr>
+				<tr>
+					<td class="col-md-1 order_add_title">网站导航</td>
+					<td class="col-md-2 order_add_info" colspan=8>
+						<textarea class="order_add_tr"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td class="col-md-1 order_add_title">资料情况</td>
+					<td class="col-md-2 order_add_info" colspan=8>
+						<textarea class="order_add_tr"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td class="col-md-1 order_add_title">网站关键词</td>
+					<td class="col-md-2 order_add_info" colspan=8>
+						<textarea class="order_add_tr"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td class="col-md-1 order_add_title">优化要求</td>
+					<td class="col-md-2 order_add_info" colspan=8>
+						<textarea class="order_add_tr"></textarea>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="col-md-12 jsfp jsfp_role"style="text-align: center;">
+			<span id="Save_info" class="Save_info">保存</span>
+		</div>
+
+	</body>
+
+</html>

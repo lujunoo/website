@@ -1,0 +1,365 @@
+
+
+/*移动端媒体查询CSS匹配*/
+@media only screen and (min-width: 100px) and (max-width: 500px) {
+	
+	/*登陆*/
+	.logocontainer {
+			position: relative;
+			margin: auto;
+			margin-top: 100px;
+			width: 350px;
+			height: 250px;
+			overflow: hidden;
+			transition: background-color 500ms;
+			cursor: pointer;
+			z-index: 10;
+		}
+			#pelogo {
+			display: block;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 400px;
+			height: 250px;
+			background: rgba(0,0,0,0.8);
+			padding-top: 50px;
+			font-weight: bold;
+			color: white;
+			text-align: center;
+		}
+		.username{
+			width: 100%;
+			height: 50px;
+		}
+		.username span{
+			width: 60px;
+			height: 30px;
+			display: block;
+			float: left;
+			text-align: right;
+			color: #00F5FF;
+			margin: 0 10px 0 30px;
+			line-height: 30px;
+		}
+		.username input{
+			width: 180px;
+			height: 30px;
+			border:  solid #00F5FF 1px;
+			display: block;
+			float: left;
+			color: #00F5FF;
+			padding-left: 10px;
+			font-size: 16px;
+			background: none;
+			
+		}
+		.btn{
+			width: 80px;
+			height: 30px;
+			border:  solid #00F5FF 1px;
+			background: none;
+			color: #00F5FF;
+			margin-top: 20px;
+			transition: 0.4s;
+		}
+	
+	/*首页*/
+	
+.index_top {
+	width: 100%;
+	height: 80px;
+	background: rgba(255, 255, 255, 0.05);
+	line-height: 80px;
+	border: solid #00F5FF 1px;
+	box-shadow: 0 0 2px 1px #00F5FF;
+	position: relative;
+	top: -100px;
+	display: none;
+	animation: index_top_animotion 2s forwards;
+}
+	.index_main_right {
+    margin-top: 70px;
+    padding: 0;
+    box-shadow: 0 0 0px 0px #00F5FF;
+    position: relative;
+    right: -800px;
+    padding: 0px;
+    animation: index_right_animotion 1s forwards;
+    }
+    .glyphicon{
+    	color: #00F5FF;	
+    }
+    .index_main_top_ph {
+		width: 90%;
+		height: auto;
+		margin: auto;
+		margin-top: 10px;
+		background: rgba(0, 0, 0, 0.7);
+		box-shadow: 0 0 2px 1px #00F5FF;
+		line-height: 20px;
+		padding: 10px;
+		display: block;
+		position: fixed;
+		top: 0;
+		z-index: 100;
+	}
+	.index_main_top_ph_icon {
+    float: left;
+    color: #00F5FF;
+    font-size: 20px;
+    padding-top: 0px;
+}
+.index_main_ph_menu {
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 0px 30px;
+    clear: both;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.index_main_top_ph_name {
+    float: right;
+    color: #00F5FF;
+    font-size: 16px;
+}
+
+.index_main_ph_menu li {
+    width: 90%;
+    line-height: 30px;
+    color: white;
+    font-size: 14px;
+}
+
+
+.ph_menu_ul {
+    width: 90%;
+    height: auto;
+    padding:0px 0 10px 20px;
+    font-size: 12px;
+    overflow: hidden;
+    display: none;
+}
+.ph_menu_ul_li {
+    width: 90%;
+    line-height: 23px;
+    color: #00F5FF;
+}
+
+
+
+
+/*角色管理列表*/
+.role_table td {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+.btn_info {
+    padding: 1px 8px;
+    border: solid #00F5FF 1px;
+    color: #00F5FF;
+    text-align: center;
+    
+    border-radius: 0px;
+    background: none;
+    margin: 3px;
+    transition: 0.4s;
+}
+.role_table_bottom_pager {
+    text-align: left;
+    height: 50px;
+    margin-top: 50px;
+    clear: both;
+    text-align: center;
+}
+
+/*角色添加*/
+.jsfp {
+    width: 100%;
+    height: auto;
+    line-height: 50px;
+}
+.jsfp span {
+    color: #00F5FF;
+    /* margin-right: 20px; */
+    font-size: 12px;
+}
+.serch_order{
+	margin-top: 10px;
+}
+.role_Edit_fp {
+    width: 80%;
+    height: 30px;
+    background: none;
+    border: none;
+    border: solid #00F5FF 1px;
+    padding-left: 10px;
+    color: #00F5FF;
+    font-size: 12px;
+    border-radius: 0px;
+}
+
+.all_check {
+    width: 15px;
+    height: 15px;
+    margin-top: 0px;
+    position: absolute;
+    
+    left: 70px;
+}
+
+.table_bordered input[type=checkbox] {
+    width: 12px;
+    height: 12px;
+    color: #00F5FF;
+    position: absolute;
+    top: 3px;
+    left: 5px;
+}
+
+.table_bordered td {
+    color: #00F5FF;
+    text-align: left;
+    border: solid #00F5FF 1px;
+    position: relative;
+    padding-left: 3px;
+    top: 0px;
+    font-size: 12px;
+    line-height: 20px;
+    
+}
+
+#role_list{
+	border: none;
+}
+#role_list td{
+	color: #00F5FF;
+	text-align: center;
+	border: solid #00F5FF 1px;
+	line-height: 30px;
+	position: relative;
+	top: 0px;
+	display: block;
+}
+#role_list tr{
+	width: 50%;
+	height: 180px;
+	float: left;
+	display: block;
+}
+.jsfp_role{
+	text-align: center;
+	margin: 30px 0px;
+}
+.jsfp_role span {
+	width: 85%;
+	height: 30px;
+	line-height: 30px;
+    color: #00F5FF;
+    font-size: 12px;
+    display: block;
+    margin: auto;
+    padding: 0;
+}
+#role_list_saveinfo{
+	width: 100%;
+	display: inline;
+}
+
+.td_active {
+	text-align: left;
+	padding-left: 20px;
+	background: rgba(0, 245, 255, 0.3);
+}
+
+/*订单妆台 */
+.Save_info {
+	padding: 2px 10px;
+	border: solid #00F5FF 1px;
+	color: #00F5FF;
+	transition: 0.3s;
+	margin: 10px;
+}
+.Save_info_sl {
+	padding: 10px 40px;
+	border: solid #00F5FF 1px;
+	color: #00F5FF;
+	transition: 0.3s;
+	margin: 10px;
+}
+
+.order_beian{
+	display: block;
+	float: none;
+}
+/*订单添加*/
+#order_lidt_add{
+	
+	border:  none;
+}
+#order_lidt_add td{
+	/*width: 50%;*/
+	float: left;
+	display: block;
+	border:  none;
+	height: auto;
+    line-height: 40px;
+    color: #00F5FF;
+    text-align: right;
+    padding: 0;
+}
+
+#order_lidt_add td input {
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    border: #00F5FF solid 1px;
+    color: #00F5FF;
+    padding-left: 10px;
+    text-align: left;
+}
+.order_add_tr {
+	min-width: 80%;
+	max-width: 80%;
+    float: left;
+    min-height: 40px;
+  	margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    border: #00F5FF solid 1px;
+    background: none;
+    padding-left: 10px;
+    line-height: 20px;
+}
+
+#order_lidt_add .table_tr_header{
+	background: rgba(0,245,255,0.2);
+	
+}
+#order_lidt_add .table_tr_header td{
+	padding-left: 30px;
+}
+
+/*添加意向客户*/
+#potential_add_table{
+	width: 99.5%;
+}
+
+select option {
+	height: 20px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /* background: green; */
+    background: rgba(0,0,0,1);
+    line-height: 20px;
+}
+
+}
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>添加计划</title>
+		<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!--BootStrap_CSS-->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<!--js库-->
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<!--BootStrap_JS-->
+		<!--自定义css-->
+		<link rel="stylesheet" href="css/index_custom_css.css" />
+		<link rel="stylesheet" href="css/media_queries.css" />
+		<!--自定义js-->
+		<script type="text/javascript" src="js/index_custom_js.js"></script>
+	</head>
+
+	<body>
+	
+
+		<table id="order_lidt_add" class="col-md-12 order_table">
+			<tbody>
+				<tr>
+					<td class="order_add_title">姓名</td>
+					<td class="order_add_info">
+						<select class="role_Edit_fp table_select">
+							<option>前端</option>
+							<option>后端</option>
+							<option>SEO</option>
+							<option>销售</option>
+
+						</select>
+					</td>
+					<td class="order_add_title">计划内容</td>
+					<td class="order_add_info"><textarea style="min-width: 200px;min-height: 40px;" class="order_add_tr"></textarea></td>
+
+				</tr>
+				<tr>
+
+					<td class="order_add_title">完成度</td>
+					<td class="order_add_info">
+						<select class="role_Edit_fp table_select">
+							<option>已完成</option>
+							<option>未完成</option>
+
+						</select>
+					</td>
+					<td class="order_add_title">未完成原因</td>
+					<td><textarea style="min-width: 200px;min-height: 40px;" class="order_add_tr"></textarea></td>
+				</tr>
+
+			</tbody>
+		</table>
+		<div class="col-md-12 jsfp jsfp_role"style="text-align: center;">
+			<span id="Save_info" class="Save_info">保存</span>
+		</div>
+
+	</body>
+
+</html>

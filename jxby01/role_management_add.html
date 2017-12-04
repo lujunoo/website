@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>角色添加</title>
+		<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!--BootStrap_CSS-->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<!--js库-->
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<!--BootStrap_JS-->
+		<!--自定义css-->
+		<link rel="stylesheet" href="css/index_custom_css.css" />
+		<link rel="stylesheet" href="css/media_queries.css" />
+		<!--自定义js-->
+		<script type="text/javascript" src="js/index_custom_js.js"></script>
+	</head>
+
+	<body>
+
+		<!--主体-->
+		<div class="col-md-12 jsfp">
+			<span>设置角色</span>
+			<input type="text" class="role_Edit_fp" value="" />
+		</div>
+		<div class="col-md-12 jsfp">
+			<span>权限分配</span><input onclick="allcheck(this)" class="all_check" type="checkbox" />
+		</div>
+		<table id="role_list"class="col-md-12 table_bordered">
+			<tbody>
+
+				<tr class="checked_par">
+					<td class="col-md-3 td_active"><input type="checkbox" class="checked checked_CH" /> 角色管理</td>
+					<td class=""><input type="checkbox" class="checked checked_ch" /> 角色列表</td>
+					<td class=""><input type="checkbox" class="checked checked_ch" /> 角色添加</td>
+					<td class=""><input type="checkbox" class="checked checked_ch" /> 角色修改</td>
+					<td class=""><input type="checkbox" class="checked checked_ch" /> 角色删除</td>
+				</tr>
+
+				<tr>
+					<td class="td_active"><input type="checkbox" class="checked checked_CH" /> 管理员管理</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 管理员列表</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 管理员添加</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 管理员修改</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 管理员删除</td>
+
+				</tr>
+				<tr>
+					<td class="td_active"><input type="checkbox" class="checked checked_CH" /> 订单管理</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 订单列表</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 订单添加</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 订单修改</td>
+					<td><input type="checkbox" class="checked checked_ch" />订单删除</td>
+
+				</tr>
+				<tr>
+					<td class="td_active"><input type="checkbox" class="checked checked_CH" /> 效果图管理</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 效果图列表</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 效果图添加</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 效果图修改</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 效果图删除</td>
+
+				</tr>
+				<tr>
+					<td class="td_active"><input type="checkbox" class="checked checked_CH" /> 职员管理</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 职员列表</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 职员添加</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 职员修改</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 职员删除</td>
+
+				</tr>
+				<tr>
+					<td class="td_active"><input type="checkbox" class="checked checked_CH" /> 外出登记管理</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 外出登记列表</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 外出登记添加</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 外出登记修改</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 外出登记删除</td>
+
+				</tr>
+				<tr>
+					<td class="td_active"><input type="checkbox" class="checked checked_CH" /> 意向客户管理</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 意向客户列表</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 意向客户添加</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 意向客户修改</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 意向客户删除</td>
+
+				</tr>
+				<tr>
+					<td class="td_active"><input type="checkbox" class="checked checked_CH" /> 计划管理</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 计划列表</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 计划添加</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 计划修改</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 计划删除</td>
+
+				</tr>
+				<tr>
+					<td class="td_active"><input type="checkbox" class="checked checked_CH" /> 收入管理</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 收入明细</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 添加明细</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 明细修改</td>
+					<td><input type="checkbox" class="checked checked_ch" /> 明细删除</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="col-md-12 jsfp jsfp_role"style="text-align: center;">
+			<span id="Save_info" class="Save_info">保存</span>
+		</div>
+		
+	</body>
+
+</html>
